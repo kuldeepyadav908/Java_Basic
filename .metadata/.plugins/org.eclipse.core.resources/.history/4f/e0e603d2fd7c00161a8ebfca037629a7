@@ -1,0 +1,24 @@
+package com.jlcindia.spring;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class JLCConfig {
+	
+	public Hello hello(A aobj,B bobj){
+		Hello h = new Hello(bobj);
+		h.setAobj(aobj);
+		return h;
+	}
+	
+	public A createA(){
+		A aobj = new A();
+		aobj.setA(88);
+		aobj.setMsg("Hello Guys");
+		return aobj;
+	}
+	
+	public B createB(){
+		return new B(99,"Hai Guys");
+	}
+}

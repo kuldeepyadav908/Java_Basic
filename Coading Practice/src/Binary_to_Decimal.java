@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Binary_to_Decimal {
+
+	public static void main(String[] args) {
+		int binum,decnum = 0,i = 1,rem;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Binary number:");
+		binum = sc.nextInt();
+		int x = binum;
+		while(binum != 0){
+			rem = binum % 10;
+			decnum = decnum + rem*i;
+			i = i*2;
+			binum = binum/10;
+		}
+		System.out.println("Decimal number "+x+" is: ");
+		System.out.println(decnum);
+
+	}
+
+}

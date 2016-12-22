@@ -1,0 +1,34 @@
+package com.jlcindia.jdbc;
+
+import javax.sql.rowset.CachedRowSet;
+
+import com.sun.rowset.CachedRowSetImpl;
+
+public class Lab19 {
+
+	public static void main(String[] args) {
+		try{
+			Class.forName("com.mysql.jdbc.Driver");
+			CachedRowSet crs = new CachedRowSetImpl();
+			crs.setUrl("jdbc:mysql://localhost:3306/saket");
+			crs.setUsername("root");
+			crs.setPassword("symbian");
+			crs.setCommand("select sid,sname,email,phone from jlcstudent");
+			crs.execute();
+			while(crs.next()){
+				System.out.println(crs.getInt(1)+"\t"+crs.getString(2)+"\t"+crs.getString(3)+"\t"+crs.getLong(4));
+			}
+			crs.absolute(1);
+			crs.updateString(2, "Dande");
+			crs.updateString(3, "dande@jlc");
+			crs.updateLong(4, 906756546);
+			crs.updateRow();
+			crs.acceptChanges();
+			System.out.println("Updated");
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+
+	}
+
+}

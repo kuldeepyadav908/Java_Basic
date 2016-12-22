@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class NPr_nCR {
+
+	public static void main(String[] args) {
+		int n,r;
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the Value of n:");
+		n = sc.nextInt();
+		System.out.print("Enter the Value of r:");
+		r = sc.nextInt();
+		try{
+		System.out.println("NCr = "+(fact(n)/(fact(n-r)*fact(r))));
+		System.out.println("nPR = "+(fact(n)/(fact(n-r))));
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+
+	}
+	public static int fact(int num){
+		int fact = 1,i;
+		for(i=0;i<num;i++){
+			fact = fact*i;
+		}
+		return fact;
+	}
+}

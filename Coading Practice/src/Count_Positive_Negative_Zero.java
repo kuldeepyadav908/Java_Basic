@@ -1,0 +1,30 @@
+/* Java Program Example - Count Positive, Negative, Zero */
+
+import java.util.Scanner;
+
+public class Count_Positive_Negative_Zero {
+
+	public static void main(String[] args) {
+		int countp = 0,countn = 0,countz = 0;
+		System.out.println("How many number you insert:");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int arr[] = new int[n];
+		System.out.println("Enter the any number +ve, -ve and zero's");
+		for(int i=0;i<n;i++){
+			arr[i] = sc.nextInt();
+		}
+		for(int i = 0;i<n;i++){
+			if(arr[i]>0)
+				countp++;
+			else if(arr[i]<0)
+				countn++;
+			else
+				countz++;
+		}
+		System.out.println("+ve no count: "+countp);
+		System.out.println("-ve no count: "+countn);
+		System.out.println("zero's no count: "+countz);
+	}
+
+}

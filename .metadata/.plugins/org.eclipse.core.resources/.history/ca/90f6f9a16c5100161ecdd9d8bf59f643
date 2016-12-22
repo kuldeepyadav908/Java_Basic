@@ -1,0 +1,10 @@
+import java.util.*;
+public class Median {
+
+	public static void main(String[] args) {
+		List <Integer> number = Arrays.asList(1,2,3,4,5,6);
+		number.forEach(int e: number);
+		System.out.println(e);
+	}
+
+}

@@ -1,0 +1,31 @@
+package com.jlcindia.jdbc;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.jlcindia.jdbc.util.JDBCUtil;
+
+public class Lab20 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
+class Account{
+	int bal;
+	int dabal,sabal,danbal,sanbal;
+	public void transfer(int sa,int da,int amt){
+		Connection con = null;
+		PreparedStatement ps1 = null;
+		PreparedStatement ps2 = null;
+		try{
+			con = JDBCUtil.getMySQLConnection();
+			//Starting Transaction
+			con.setAutoCommit(false);
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+}

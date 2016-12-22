@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 25 resources" deleteContents="true" description="Delete 25 resources" element1="/acloserlookatargumentpassing" element10="/introducing_nested_and_inner_classes" element11="/javatest" element12="/Kr" element13="/literal_variable" element14="/operator" element15="/overloading" element16="/Package" element17="/pattern" element18="/Programs" element19="/recursion" element2="/Array" element20="/returningobject" element21="/Star_Pattern" element22="/StringMatch" element23="/StringReverse" element24="/understandingstatic" element25="/usingobjectasparameter" element3="/Arrays_Example" element4="/arraysrevisited" element5="/BinaryTree" element6="/check" element7="/fundamental" element8="/InnerClass" element9="/InterFace" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="25" stamp="1466336998210"/>
+</session>

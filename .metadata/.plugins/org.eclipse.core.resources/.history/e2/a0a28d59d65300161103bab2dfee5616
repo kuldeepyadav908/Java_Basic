@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Merge_2_in_1_Array {
+
+	public static void main(String[] args) {
+		int size1,size2;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Array1 size: ");
+		size1 = sc.nextInt();
+		int arr1[] = new int[size1];
+		System.out.println("Insert the elements in Array1");
+		for(int i=0;i<arr1.length;i++){
+			arr1[i] = sc.nextInt();
+		}
+		System.out.println("Enter the Array2 size: ");
+		size2 = sc.nextInt();
+		int arr2[] = new int[size2];
+		System.out.println("Insert the elements in Array2");
+		for(int i=0;i<arr2.length;i++){
+			arr1[i] = sc.nextInt();
+		}
+		int size3 = size1 + size2;
+		int merge[] = new int[size3];
+		for(int i=0;i<size1;i++){
+			merge[i] = arr1[i];
+		}
+		for(int i = 0, k = size1;k<size && i<size2;i++,k++){
+			merge
+		}
+
+	}
+
+}

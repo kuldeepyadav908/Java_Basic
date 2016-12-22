@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Area_Perimeter {
+
+	public static void main(String[] args) {
+		float len,bre,area,peri;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Choose your option.. 1 or 2");
+		System.out.println("Enter 1 -> SQUARE or 2 -> RECTANGLE");
+		int option = sc.nextInt();
+		switch(option){
+		case 1:{
+			System.out.println("Enter the SIDE of Square: ");
+			float side = sc.nextFloat();
+			area = side * side;
+			peri = 4 * side;
+			System.out.println("Area = "+area);
+			System.out.println("Perimeter = "+peri);
+		}
+		case 2:{
+			System.out.println("Enter the Length and Breath of Rectangle: ");
+			len = sc.nextFloat();
+			bre = sc.nextFloat();
+			area = len * bre;
+			peri = 2*len + 2*bre;
+			System.out.println("Area = "+area);
+			System.out.println("Perimeter = "+peri);
+		}
+		}
+	}
+
+}
